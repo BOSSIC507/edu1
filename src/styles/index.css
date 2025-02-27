@@ -1,0 +1,45 @@
+.block {
+  width: 250px;
+  height: 50px;
+
+  font-size: 60px;
+}
+
+.tasks {
+  width: 1000px;
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navBar {
+  width: 100vw;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #eee;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.lk {
+  background-color: coral;
+  border-radius: 15px;
+  border: none;
+  color: white;
+  padding: 5px 10px 5px 10px;
+}

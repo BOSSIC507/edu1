@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./styles/index.css";
 
 export interface Task {
   text: string;
@@ -13,6 +14,7 @@ export const TaskComponent = (task: Task) => {
       onClick={() => {
         setChecked(!isChecked);
       }}
+      className="block"
     >
       {task.text}
       {isChecked ? "+" : "-"}

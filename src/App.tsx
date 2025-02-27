@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Task, TaskComponent } from "./Task";
+import "./styles/index.css";
 
 function App() {
   const [tasks, setTask] = useState<Task[]>([]);
@@ -15,7 +16,22 @@ function App() {
 
   return (
     <div>
-      <input
+      <nav className="navBar">
+        <div>
+          <img src="" alt="" className="logo" />
+        </div>
+        <div className="links">
+          <span>Новости</span>
+          <span>Мероприятия</span>
+          <span>Студенту</span>
+          <span>ОПК</span>
+          <span>Центр</span>
+        </div>
+        <div>
+          <button className="lk">Личный кабинет</button>
+        </div>
+      </nav>
+      {/* <input
         type="text"
         value={text}
         onChange={(e) => {
@@ -37,13 +53,13 @@ function App() {
         Добавить задачу
       </button>
 
-      <ul>
+      <ul className="tasks">
         {tasks.map((task, index) => {
           return (
             <TaskComponent text={task.text} isComplied={task.isComplied} />
           );
         })}
-      </ul>
+      </ul> */}
     </div>
   );
 }
