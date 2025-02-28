@@ -28,7 +28,7 @@ function App() {
           <span>Центр</span>
         </div>
         <div>
-          <button className="lk">Личный кабинет</button>
+          <button className="lk text-7xl">Личный кабинет</button>
         </div>
       </nav>
       {/* <input
